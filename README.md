@@ -18,7 +18,7 @@ A fast, human-friendly DOM inspector for Chromium browsers. Pick an element and 
 ## Install from source
 
 1. Clone or download this repository.
-2. Run `npm run build` or use the committed `dist/` folder.
+2. Run `npm run build`.
 3. Open `chrome://extensions`.
 4. Enable **Developer mode**.
 5. Choose **Load unpacked** and select the `dist/` directory.
