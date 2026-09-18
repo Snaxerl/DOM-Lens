@@ -1,0 +1,27 @@
+{
+  "name": "dom-lens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A human-friendly DOM inspector for Chromium browsers.",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist && mkdir -p dist",
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "check": "npm run typecheck && npm test",
+    "package": "npm run check && node scripts/package.mjs"
+  },
+  "keywords": [
+    "chrome-extension",
+    "dom",
+    "inspector",
+    "accessibility",
+    "playwright",
+    "css-selector"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
